@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer | Edd Jhae Bausa</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+
+    <figure class="clock">
+      <div class="mins">0</div>
+      <div>:</div>
+      <div class="secs">00</div>
+      <audio
+        src="http://soundbible.com/mp3/service-bell_daniel_simion.mp3"
+      ></audio>
+      <svg class="progress-ring" height="120" width="120">
+        <circle
+          class="progress-ring__circle"
+          stroke-width="8"
+          fill="transparent"
+          r="50"
+          cx="60"
+          cy="60"
+        />
+      </svg>
+    </figure>
+
+    <div class="btn-group">
+      <button class="start">Start</button>
+      <button class="reset">Reset</button>
+      <button class="pause">Pause</button>
+    </div>
+
+    <form action=".">
+      <label for="focusTime">Focus Time</label>
+      <input type="number" value="20" id="focusTime" />
+      <label for="breakTime">Break Time</label>
+      <input type="number" value="5" id="breakTime" />
+      <button type="submit">Save settings</button>
+    </form>
+    <footer>
+      <h3>Created by Edd Jhae Bausa</h3>
+    </footer>
+
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/timer.js"></script>
+    <script src="scripts/progress.js"></script>
+  </body>
+</html>
